@@ -1,0 +1,11 @@
+test scenario :Registration page while proceeding for order process
+test case Tid_reg_1:Enter all the fields with correct values Actual output:Order confirmation page Expected output:redirecting to Order confirmation page
+test case Tid_reg_2:Enter mail id without the mail format in email filed Actual output:prompting to enter correct mail id Expected output:prompting to enter correct mail id
+test case Tid_reg_3:Enter all the fields with correct values and no data in address filed  output: Prompting to enter address by highligthing the text area
+test case Tid_reg_4:Enter all the fields with correct values and entercard number as characters actual output:redirecting to Order confirmation page expected output:Prompt for correct card number value and stay in the same page
+test case Tid_reg_5:Enter all the fields with correct values and leave the adress field empty Actual output:redirecting to Order confirmation page Expected output:As the address field is madatory it should be prompted 
+test case Tid_reg_6:Enter all the fields with correct values  and the phone no with charaters Actual output:prompting to enter correct Phone no Expected output:prompting to enter correct Phone no format
+test case Tid_reg_7:Enter all the fields with correct values and entercard number as characters not selecting the card type Actual output:redirecting to order confirmation page Expected Output:Prompt to select the card type
+test case Tid_reg_8:Enter all the fields with correct values and leave the card number filed empty Actual output:prompting to enter card number Expected output:prompting to enter card number correctly page
+test case Tid_reg_9:Enter all the fields with incorrect values Actual output:Prompting for name,mail id,address and card number Expected output:Prompting for name,mail id,address and card number
+test case Tid_reg_10:Enter all the fields with correct values Actual output:Order confirmation page Expected output:redirecting to Order confirmation page and logged in for further shopping
