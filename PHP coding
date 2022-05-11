@@ -1,0 +1,41 @@
+Write a solution to find the character that has the highest number of occurrences within a certain string, ignoring case. If there is more than one character with equal highest occurrences, return the character that appeared first within the string.
+<?php
+// PHP program to output the maximum occurring character in a string
+$ASCII_SIZE = 256;
+
+function getMaxOccurringChar($str)
+{
+	global $ASCII_SIZE;
+	
+	// Create array to keep the count of individual characters and
+	// initialize the array as 0
+	$count = array_fill(0, $ASCII_SIZE, NULL);
+
+	// Construct character count array from the input string.
+	$len = strlen($str);
+	$max = 0; // Initialize max count
+
+	// Traversing through the string and maintaining the count of each character
+	for ($i = 0; $i < ($len); $i++)
+	{
+		$count[ord($str[$i])]++;
+		if ($max < $count[ord($str[$i])])
+		{
+			$max = $count[ord($str[$i])];
+			$result = $str[$i];
+		}
+	}
+
+	return $result;
+}
+?>
+
+Build a food ordering system where the user inputs the food name into the food order and then the order getspassed to the appropriate restaurant on a list and the restaurant prints the receipt on stdout. No need to create a
+UI, a main function that receives parameters is enough.
+<?php
+//database connection
+mysql_connect("localhost","user name","password","database_name");
+$menu_item=$_POST["menuitem"];
+$sql_querry="select Menu_item,Restuarent_name,Price from restaurents where Menu_item=".$menu_item;
+echo "you have selected".$sql_querry;
+?>
